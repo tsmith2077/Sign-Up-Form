@@ -1,0 +1,41 @@
+html {
+    position: relative;
+    background-color: black;
+}
+
+body {
+    position: relative;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    background-color: lightgray;
+    margin-top: 0;
+}
+
+.container {
+    position: absolute;
+    background-color: gray;
+    height: 100vh;
+}
+
+#plant {
+    position: relative;
+    width: 60vh;
+    height: 100vh;
+    left: 0;
+}
+
+#odin {
+    position: absolute;
+    width: 10vh;
+    height: auto;
+    left: 0vh;
+    top: 20vh;
+    border: solid black;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 1vh 25vh;
+    float: left;
+}
+
+h1 {
+    float: right;
+}
