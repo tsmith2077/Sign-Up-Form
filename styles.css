@@ -7,35 +7,55 @@ body {
     position: relative;
     margin-left: 30vh;
     margin-right: 30vh;
-    background-color: lightgray;
     margin-top: 0;
 }
 
 .container {
-    position: absolute;
-    background-color: gray;
+    position: relative;
+    background-color: lightgray;
     height: 100vh;
 }
 
 #plant {
     position: relative;
-    width: 60vh;
+    width: 50vh;
     height: 100vh;
     left: 0;
 }
 
-#odin {
+#odin-container {
     position: absolute;
-    width: 10vh;
-    height: auto;
-    left: 0vh;
-    top: 20vh;
+    top: 25vh;
+    left: -3px;
+    height: 6rem;
     border: solid black;
     background-color: rgba(0, 0, 0, .4);
-    padding: 1vh 25vh;
-    float: left;
+    padding: 0 25vh;
+}
+
+#odin {
+    position: absolute;
+    width: 4rem;
+    height: auto;
+    left: 15vh;
+    top: 1vh;
+}
+
+@font-face {
+    font-family: norse;
+    src: url(img-font/Norse-Bold.otf);
 }
 
 h1 {
+    position: absolute;
+    left: 25vh;
+    top: -1rem;
+    color: white;
+    font-family: norse;
+    font-size: 4rem;
+}
+
+h3 {
     float: right;
+    color: white;
 }
