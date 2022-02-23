@@ -9,17 +9,56 @@
 </head>
 <body>
     <div class="container">
-        <img src="img-font/plant.jpg" id="plant" alt="Picture of fern branch">
-        <div id="odin-container">
-            <img src="img-font/odin.png" id="odin" alt="Logo picture of Odin">
-            <h1>Odin</h1>
+        <div id="img-container">
+            <div id="odin-container">
+                <img src="img-font/odin.png" id="odin" alt="Logo of Odin, god of thunder">
+                <h1>Odin</h1>
+            </div>
         </div>
-        <div id="form-cont">
-            <h3>
-                Sign up now, for unlimited spam emails you'll never use!!
+        <div id="right-cont">
+            <h4>
+                <div>Sign up now, for unlimited spam emails you'll never use!!</div>
+                <br>
                 Why would I do that you ask? Who knows, a 5% discount a store you'll only shop at once maybe?
-                I don't have a store, or a discount, but what we do have is.... tons of unsolicited emails! Wooho!
-            </h3>
+                I don't have a store, or a discount, but what we do have is.... <br><br> unsolicited emails! Wooho!
+            </h4>
+            <div id="form-cont">
+                <form action="">
+                    <h5>Sign up now!</h5>
+                    <div class="textInputRow">
+                        <div class="textInput">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="textInput">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    <div class="textInputRow">
+                        <div class="textInput">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="textInput">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+                    <div class="textInputRow">
+                        <div class="textInput">
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="textInput">
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input type="password" id="passwordConfirm">
+                        </div>
+                    </div>
+                </form>
+                <button>Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>

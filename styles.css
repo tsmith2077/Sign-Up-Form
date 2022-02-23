@@ -11,9 +11,24 @@ body {
 }
 
 .container {
+    display: flex;
     position: relative;
-    background-color: lightgray;
+    background-color: 	#F5F5F5;
     height: 100vh;
+}
+
+#img-container {
+    display: flex;
+    flex: 0 0 auto;
+    height: 100vh;
+    width: 400px;
+    background-image: url(img-font/plant.jpg);
+    background-size: cover;
+}
+
+#right-cont {
+    display: flex;
+    flex-grow: 1;
 }
 
 #plant {
@@ -23,22 +38,21 @@ body {
     left: 0;
 }
 
-#odin-container {
+
+#odin-container h1 {
     position: absolute;
-    top: 25vh;
-    left: -3px;
-    height: 6rem;
-    border: solid black;
-    background-color: rgba(0, 0, 0, .4);
-    padding: 0 25vh;
+    font-size: 4.5rem;
+    margin: 196px 24px;
 }
 
 #odin {
-    position: absolute;
-    width: 4rem;
+    position: relative;
+    width: 4.5rem;
     height: auto;
-    left: 15vh;
-    top: 1vh;
+    margin: 150px -88px;
+    padding: 4px 206px;
+    border: solid black;
+    background-color: rgba(0, 0, 0, .4);
 }
 
 @font-face {
@@ -55,7 +69,68 @@ h1 {
     font-size: 4rem;
 }
 
-h3 {
-    float: right;
+h4 {
+    margin: 6rem 2rem;
+    font-size: large;
+    text-align: left;
+}
+
+h5 {
+    margin-left: 32px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    font-size: large;
+}
+
+#form-cont {
+    display: flex;
+    position: absolute;
+    margin: 17rem 0;
+    background-color: white;
+    padding: -100px 200px 100px 200px;
+    box-shadow: 0 .4rem .4em grey;
+}
+
+.textInput {
+    display: flex;
+    flex-direction: column;
+}
+
+label + input {
+    border-color: #E5E7EB;
+    border-radius: 4px;
+}
+
+.textInputRow {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0 206px 12px 32px;
+    width: 100%;
+}
+
+.textInputRow:last-child {
+    padding-bottom: 32px;
+}
+
+button {
+    position: absolute;
+    margin: 230px 32px;
+    padding: 8px 32px;
+    border-radius: 10px;
     color: white;
+    background-color: #596D48;  
+}
+
+p {
+    position: absolute;
+    margin: 288px 32px;
+}
+
+label {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
 }
