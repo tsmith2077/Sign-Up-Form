@@ -8,13 +8,15 @@
     <title>Sign Up Form</title>
 </head>
 <body>
+
     <div class="container">
-        <div id="img-container">
-            <div id="odin-container">
+        <div id="imgContainer">
+            <div id="odinContainer">
                 <img src="img-font/odin.png" id="odin" alt="Logo of Odin, god of thunder">
                 <h1>Odin</h1>
             </div>
         </div>
+
         <div id="right-cont">
             <h4>
                 <div>Sign up now, for unlimited spam emails you'll never use!!</div>
@@ -22,9 +24,11 @@
                 Why would I do that you ask? Who knows, a 5% discount a store you'll only shop at once maybe?
                 I don't have a store, or a discount, but what we do have is.... <br><br> unsolicited emails! Wooho!
             </h4>
+
             <div id="form-cont">
                 <form action="">
                     <h5>Sign up now!</h5>
+
                     <div class="textInputRow">
                         <div class="textInput">
                             <label for="firstName">First Name</label>
@@ -36,6 +40,7 @@
                         </div>
                     </div>
                     <div class="textInputRow">
+
                         <div class="textInput">
                             <label for="email">Email</label>
                             <input type="email" id="email">
@@ -45,20 +50,21 @@
                             <input type="tel" id="phone">
                         </div>
                     </div>
+
                     <div class="textInputRow">
                         <div class="textInput">
                             <label for="password">Password</label>
-                            <input type="password" id="password">
+                            <input type="password" id="password" class="password" required>
                         </div>
                         <div class="textInput">
                             <label for="passwordConfirm">Confirm Password</label>
-                            <input type="password" id="passwordConfirm">
+                            <input type="password" id="passwordConfirm" class="password" required>
                         </div>
                     </div>
                 </form>
-                <button>Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
             </div>
+            <button>Create Account</button>
+            <p id="logIn">Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>

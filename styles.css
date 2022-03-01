@@ -1,99 +1,114 @@
-html {
-    position: relative;
-    background-color: black;
-}
-
-body {
-    position: relative;
-    margin-left: 30vh;
-    margin-right: 30vh;
-    margin-top: 0;
-}
-
-.container {
-    display: flex;
-    position: relative;
-    background-color: 	#F5F5F5;
-    height: 100vh;
-}
-
-#img-container {
-    display: flex;
-    flex: 0 0 auto;
-    height: 100vh;
-    width: 400px;
-    background-image: url(img-font/plant.jpg);
-    background-size: cover;
-}
-
-#right-cont {
-    display: flex;
-    flex-grow: 1;
-}
-
-#plant {
-    position: relative;
-    width: 50vh;
-    height: 100vh;
-    left: 0;
-}
-
-
-#odin-container h1 {
-    position: absolute;
-    font-size: 4.5rem;
-    margin: 196px 24px;
-}
-
-#odin {
-    position: relative;
-    width: 4.5rem;
-    height: auto;
-    margin: 150px -88px;
-    padding: 4px 206px;
-    border: solid black;
-    background-color: rgba(0, 0, 0, .4);
-}
-
 @font-face {
     font-family: norse;
     src: url(img-font/Norse-Bold.otf);
 }
 
-h1 {
-    position: absolute;
-    left: 25vh;
-    top: -1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+
+.container {
+    display: flex;
+    background-color: 	#F5F5F5;
+    height: 120vh;
+    overflow: hidden;
+}
+
+#right-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+#imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 65%;
+    background-image: url(img-font/plant.jpg);
+    background-size: cover;
+}
+
+#odinContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+#odinContainer h1 {
     color: white;
     font-family: norse;
     font-size: 4rem;
+    padding-top: 1rem;
+}
+
+#odin {
+    width: 4.5rem;
+    height: auto;
 }
 
 h4 {
-    margin: 6rem 2rem;
+    margin: 6rem 2rem 3rem 2rem;
     font-size: large;
     text-align: left;
 }
 
 h5 {
-    margin-left: 32px;
-    margin-top: 14px;
-    margin-bottom: 8px;
+    margin-left: 15%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: large;
 }
 
 #form-cont {
     display: flex;
-    position: absolute;
-    margin: 17rem 0;
+    padding-bottom: 1rem;
+    width: 100%;
     background-color: white;
-    padding: -100px 200px 100px 200px;
+    flex-wrap: wrap;
     box-shadow: 0 .4rem .4em grey;
+}
+
+.textInputRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .textInput {
     display: flex;
     flex-direction: column;
+    margin-left: 30%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: blue;
+    box-shadow: .2rem .2rem .2em lightblue;
+}
+
+input:required {
+    border-color: red;
+    box-shadow: .2rem .2rem .2rem #ffcccb;
+}
+
+label {
+    font-size: small;
 }
 
 label + input {
@@ -101,36 +116,52 @@ label + input {
     border-radius: 4px;
 }
 
-.textInputRow {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    padding: 0 206px 12px 32px;
-    width: 100%;
-}
-
-.textInputRow:last-child {
-    padding-bottom: 32px;
-}
-
 button {
-    position: absolute;
-    margin: 230px 32px;
-    padding: 8px 32px;
     border-radius: 10px;
     color: white;
     background-color: #596D48;  
+    margin-left: 5%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    width: 12rem;
 }
 
-p {
-    position: absolute;
-    margin: 288px 32px;
-}
-
-label {
-    font-size: small;
+#logIn {
+    margin-left: 5%;
 }
 
 a {
     text-decoration: none;
 }
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: black;
+        margin-right: 14%;
+        margin-left: 14%;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .textInputRow {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        gap: 3rem;
+        margin-left: 10%;
+    }
+
+    #form-cont {
+        display: flex;
+        min-height: fit-content;
+        height: 30%;
+        width: 100%;
+        background-color: white;
+        flex-wrap: wrap;
+        box-shadow: 0 .4rem .4em grey;
+    }
+  }
+
